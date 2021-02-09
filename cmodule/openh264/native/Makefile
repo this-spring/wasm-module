@@ -11,3 +11,7 @@ $(TARGET): $(OBJ)
 .PHONY: clean
 clean:
 	rm -rf $(TARGET)
+
+# ffplay -f rawvideo -pixel_format yuv420p -s 720*1280 test.yuv
+# ffplay -f f32le -ac 1 -ar 48000 test-web-data.pcm
+# ffplay -stats -f h264 test.264
